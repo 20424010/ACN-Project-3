@@ -1,48 +1,42 @@
 {
-  "name": "amazona",
+  "name": "docker-chakra-react",
   "version": "1.0.0",
-  "description": "Demo : https://amazonaapp.herokuapp.com/",
-  "main": "index.js",
+  "homepage": "./",
+  "private": true,
   "dependencies": {
-    "aws-sdk": "^2.702.0",
-    "body-parser": "^1.19.0",
-    "dotenv": "^8.2.0",
-    "eslint-plugin-react": "^7.19.0",
-    "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.8.11",
-    "multer": "^1.4.2",
-    "multer-s3": "^2.9.0"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.8.4",
-    "@babel/node": "^7.8.4",
-    "@babel/preset-env": "^7.8.4",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb": "^18.1.0",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react-hooks": "^2.5.1",
-    "nodemon": "^2.0.2"
+    "@chakra-ui/icons": "^2.1.0",
+    "@chakra-ui/react": "^2.8.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@types/react": "^18.0.27",
+    "framer-motion": "^7.10.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "serve": "^14.2.0"
   },
   "scripts": {
-    "start": "nodemon --watch backend --exec babel-node backend/server.js",
-    "build": "rm -rf dist && babel backend -d dist  && cd frontend && npm install && npm run build",
-    "heroku-postbuild-x": "npm run build && cd frontend && npm install && npm run build"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/basir/amazona.git"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/basir/amazona/issues"
-  },
-  "homepage": "https://github.com/basir/amazona#readme",
-  "engines": {
-    "node": "12.4.0",
-    "npm": "6.9.0"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

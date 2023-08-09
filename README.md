@@ -1,50 +1,39 @@
+# Dockerized @ Boilerplate React + Chakra UI
 
+Scaffold a new project using dokerized boilerplate Create React App and Chakra UI.
 
 ## Run Locally
 
-### 1. Clone repo
+#### Clone the project
 
-```
-$ git clone git@github.com:basir/node-react-ecommerce.git
-$ cd node-react-ecommerce
-```
-
-### 2. Install MongoDB
-
-Download it from here: https://docs.mongodb.com/manual/administration/install-community/
-
-### 3. Run Backend
-
-```
-$ npm install
-$ npm start
+```bash
+  git clone https://github.com/dendrofen/docker-react-chakra-ui
 ```
 
-### 4. Run Frontend
+#### Go to the project directory
 
-```
-# open new terminal
-$ cd frontend
-$ npm install
-$ npm start
+```bash
+  cd docker-react-chakra-ui-bolerplate
 ```
 
-### 5. Create Admin User
+#### Run docker
 
-- Run this on chrome: http://localhost:5000/api/users/createadmin
-- It returns admin email and password
+```bash
+  docker compose up
+```
 
-### 6. Login
+## Build Locally
 
-- Run http://localhost:3000/signin
-- Enter admin email and password and click signin
+To build this project run
 
-### 7. Create Products
+```bash
+  docker compose -f docker-compose.build.yml up
+```
 
-- Run http://localhost:3000/products
-- Click create product and enter product info
+## Preview Locally
 
-## Support
+To build this project run
 
-- Q/A: https://webacademy.pro/oldamazona
-- Contact Instructor: [Basir](mailto:basir.jafarzadeh@gmail.com)
+```bash
+  docker compose -f docker-compose.preview.yml up
+```
