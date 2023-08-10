@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Build And Push Image') {
             steps {
-                scripts {
+                script {
                     withCredentials([string(credentialsId: 'dockerhub-pwd', variable: 'dockerhubpwd')]) {
                         sh 'docker build -t acn/jenkins-project-3 .'
                         sh 'docker login -u 20424010 -p ${dockerhubpwd}'
