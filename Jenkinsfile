@@ -20,6 +20,7 @@ pipeline {
     stage('Push') {
       steps {
         sh 'docker push acn/jenkins-project-3'
+        sh 'docker logout'
       }
     }
   }
