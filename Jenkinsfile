@@ -19,7 +19,7 @@ pipeline {
                         sh 'docker build -t acn/jenkins-project-3 .'
                         sh 'docker login -u 20424010 -p ${dockerhubpwd}'
 
-                        sh 'docker push acn/jenkins-project-3'
+                        sh 'docker push 20424010/jenkins-acn-project'
                     }
                 }
             }
