@@ -4,7 +4,7 @@ pipeline {
     buildDiscarder(logRotator(numToKeepStr: '5'))
   }
   environment {
-    DOCKERHUB_CREDENTIALS = credentials('docker-hub')
+    DOCKERHUB_CREDENTIALS = credentials('dockerhub')
   }
   stages {
     stage('Build') {
@@ -20,8 +20,12 @@ pipeline {
     stage('Push') {
       steps {
         sh 'docker push acn/jenkins-project-3'
-        sh 'docker logout'
       }
+    }
+  }
+  post {
+    always {
+      sh 'docker logout'
     }
   }
 }
