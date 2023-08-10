@@ -16,9 +16,16 @@ pipeline {
                 url: 'https://github.com/20424010/ACN-Project-3.git'
             }
         }
-        stage('Build') {
+        stage('Build And Push Image') {
             steps {
-                sh 'docker build -t acn/jenkins-project-3 .'
+                scripts {
+                    withCredentials([string(credentialsId: 'dockerhub-pwd', variable: 'dockerhubpwd')]) {
+                        sh 'docker build -t acn/jenkins-project-3 .'
+                        sh 'docker login -u 20424010 -p ${dockerhubpwd}'
+
+                        sh 'docker push acn/jenkins-project-3'
+                    }
+                }
             }
         }
     }
