@@ -16,7 +16,7 @@ pipeline {
             steps {
                 script {
                     withCredentials([string(credentialsId: 'dockerhub-pwd', variable: 'dockerhubpwd')]) {
-                        sh 'docker build -t acn/jenkins-project-3 .'
+                        sh 'docker build -t 20424010/jenkins-acn-project .'
                         sh 'docker login -u 20424010 -p ${dockerhubpwd}'
 
                         sh 'docker push 20424010/jenkins-acn-project'
