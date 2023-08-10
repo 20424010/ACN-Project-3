@@ -13,4 +13,4 @@ jobs:
           url: ${{ secrets.JENKINS_SERVER_URL }}
           user: "20424010"
           token: ${{ secrets.JENKINS_TOKEN }}
-          job: "foobar"
+          job: "ACN-Project-3-Workflow"
