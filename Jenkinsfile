@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent docker
     options {
         // Timeout counter starts AFTER agent is allocated
         timeout(time: 5, unit: 'SECONDS')
