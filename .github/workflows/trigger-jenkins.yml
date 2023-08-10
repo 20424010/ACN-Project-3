@@ -1,0 +1,16 @@
+name: Trigger Jenkins Workflow
+on:
+  workflow_call:
+
+jobs:
+  trigger:
+    name: Trigger jenkins workflow
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger
+        uses: appleboy/jenkins-action@master
+        with:
+          url: ${{ secrets.JENKINS_SERVER_URL }}
+          user: "20424010"
+          token: ${{ secrets.JENKINS_TOKEN }}
+          job: "foobar"
