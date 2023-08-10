@@ -1,6 +1,6 @@
 pipeline {
     agent {
-      docker
+      docker { image 'ubuntu:latest' }
     }
     options {
         // Timeout counter starts AFTER agent is allocated
