@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Git') {
             steps {
-                git branch: 'feature/todo-list'
+                git branch: 'feature/todo-list',
                 url: 'https://github.com/20424010/ACN-Project-3.git'
             }
         }
