@@ -29,7 +29,7 @@ const Home = () => {
   return (
     <Container maxW="sm" mt={10}>
       <VStack spacing={4}>
-        <Heading as="h1">Todo App Deploy Demo1</Heading>
+        <Heading as="h1">Todo App Deploy Demo2</Heading>
         <Input
           placeholder="Add a new todo..."
           value={newTodo}
