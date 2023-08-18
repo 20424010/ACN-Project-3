@@ -10,7 +10,7 @@ jobs:
       - name: Trigger
         uses: appleboy/jenkins-action@master
         with:
-          url: "https://9c2e-2402-9d80-34f-71de-1d4f-432d-5786-1f55.ngrok-free.app"
+          url: "https://2713-2402-9d80-34f-71de-1d4f-432d-5786-1f55.ngrok-free.app"
           user: "20424071"
-          token: "1108f49a3d6c94bf1cb01917075c02d321"
+          token: "11e2e4b4467cc4ab9df62255b7fe59e4a2"
           job: "ACN-Project-3-Workflow"
