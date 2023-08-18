@@ -6,7 +6,7 @@ const HomePage = () => {
         <Center h={'100vh'}>
             <Stack>
                 <Heading>React + Chakra UI</Heading>
-                <Text>Create React App. Boilerplate. Docker.</Text>
+                <Text>Create React App. Bo333ilerplate. Docker.</Text>
             </Stack>
 
             <GithubCorner />
